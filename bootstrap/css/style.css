@@ -1,0 +1,84 @@
+/* 
+    Document   : style
+    Created on : Jan 25, 2017, 10:41:11 PM
+    Author     : FRANKCHUKY
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+
+body{
+    background-color:  white;
+}
+
+
+.message-alert{
+    padding-top: 200px;
+}
+
+.table{
+    border-radius: 0.7em;
+}
+
+.jumbotron{
+   /** background-color:  #1E90FF;*/
+   background-color:  #a7caf7;
+  /** background-color:  #c4dcfb;*/
+    padding-top: 70px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 1.3em;
+    
+}
+.form-group{
+    padding-top: 15px;
+}
+
+.loginstyle{
+   padding-top: 100px;
+}
+
+.signupstyle{
+   padding-top: 70px;
+}
+#how-it-works{
+    color: white;
+    font-size: 16px;
+    
+}
+footer{
+    color: #faf1ed;
+    font-weight: bold;
+    font-size: 16px;
+    position: relative; 
+    bottom: 0; 
+    left: 0; 
+    right: 0; 
+    height: 50px;
+  
+}
+
+.form-group{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.navbar-inverse{
+    background-color:   #125baa;
+}
+
+i{
+     color: #bab836;
+}
+
+#div1,#div2,#div3,#div4,#div5,#div5,#div6,#div7{
+    position: relative;
+    left:0px;
+    right: 0px;
+    padding-bottom: 20px;
+    opacity: 0.2;
+}
