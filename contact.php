@@ -82,10 +82,10 @@ function test_input($data) {
                         $username = $_POST["username"];
                         $email = $_POST["email"];
                         $complaint = $_POST["complaint"];
-                        $to = 'support@donorsbay.com'; 
+                        $to = 'support@helpresort.com'; 
                         $email_subject = "Website Contact Form:  $username";
                         $email_body = "\n".$complaint;
-                        $headers = "From: support@donorsbay.com\n"; // This is the email address the generated message will be from. We recommend using something like noreply@tribenigeria.com.
+                        $headers = "From: support@helpresort.com\n"; // This is the email address the generated message will be from. We recommend using something like noreply@tribenigeria.com.
                         $headers .= "Reply-To: $email";
                         
                         if (mail($to, $email_subject, $email_body, $headers)){
