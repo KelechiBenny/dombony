@@ -37,7 +37,11 @@ function test_input($data) {
     <body>
         <style>
             li{
-                font-weight: bold;
+                /*font-weight: bold;*/
+            }
+
+            .form-control{
+                height: 45px;
             }
 
         </style>
@@ -63,18 +67,16 @@ function test_input($data) {
                 </div>
             </div>
         </nav>
-        <div class="container" style="color: white;">
+        <div class="container" style="color: #333;">
             <div class="row">
 
-                <div class="col-sm-2  col-lg-4 col-md-4">
+                <div class="col-sm-2  col-lg-2 col-md-2"></div>
 
-                </div>
-
-                <div class="col-sm-8 col-xs-12 col-lg-4 col-md-4 loginstyle" >
+                <div class="col-sm-8 col-xs-12 col-lg-8 col-md-8 loginstyle" >
 
                     <form class="form-horizontal" method="post" role="form" action=<?php echo htmlspecialchars($_SERVER["PHP_SELF"]) ?>>
 
-                        <div class="jumbotron">
+                        <div class="">
 
                             <?php
                             if (isset($_GET["msg"]) && $_GET["msg"] == "successful") {
@@ -143,19 +145,21 @@ function test_input($data) {
                             <div class="form-group">
                                 <input type="checkbox">&nbsp;&nbsp;Remember me
                             </div>
-                            <p style="font-size: 14px;">No Account yet? <a href="register.php">signup</a></p>
                             <div class="form-group">
                                 <Button type="submit" class="btn btn-primary btn-block">Log in</Button>
                             </div>
 
                             <div class="form-group text-center">
-                                <a href="reset.php">forgot password?</a>
+                                <a href="reset.php">Forgot password?</a>
+                                <br><br>
+                                <a href="register.php">No account? Signup</a>
                             </div>
+                            
                         </div>
                     </form>
 
                 </div>
-                <div class="col-sm-2  col-lg-4 col-md-4">
+                <div class="col-sm-2  col-lg-2 col-md-2">
 
                 </div>
             </div>

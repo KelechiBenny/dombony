@@ -42,7 +42,10 @@ function test_input($data) {
     <body>
         <style>
             li{
-                font-weight: bold;
+                /*font-weight: bold;*/
+            }
+            .form-control{
+                height: 45px;
             }
 
         </style>
@@ -67,12 +70,13 @@ function test_input($data) {
                 </div>
             </div>
         </nav>
-        <div class="container">
+        <div class="">
 
-            <div class="col-sm-2 col-md-4  col-lg-3"></div>
-            <div class="col-sm-8 col-md-4 col-xs-12 col-lg-6 loginstyle">
-                <div class="text-info text-center">Fill every required information</div>
-                <div class="jumbotron">
+            <!-- <div class="col-sm-2 col-md-4  col-lg-3"></div> -->
+            <div class="col-sm-12 col-md-12 col-xs-12 col-lg-12 loginstyle">
+                <div class="">
+                <p class="text-info">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fill every required information</p>
+                
                     <?php
                     if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         foreach ($names as $name => $value) {
@@ -90,12 +94,11 @@ function test_input($data) {
                                 echo "Account Not Created";
                             }
                         } else {
-                            echo "<div class='alert alert-info ' style='padding-top: 1%'>
-            <a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
-  <strong>Warning!</strong>
-  ";
+                            echo "<div class='alert alert-danger' style='padding-top: 1%'>
+            <a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>";
 
                             echo"<ul>";
+                            echo "<li style='list-style:none;'><strong>Warning!</strong></li>";
                             if (sizeof($errors1) != 0) {
                                 foreach ($errors1 as $error => $value) {
                                     echo "<li>" . $value . "</li>";
@@ -107,6 +110,7 @@ function test_input($data) {
                     ?>
                     <form class="form-horizontal" method="post" role="form" action=<?php echo htmlspecialchars($_SERVER["PHP_SELF"]) ?>>
 
+                    <div class='col-sm-6 col-xs-12'>
                         <div class="form-group">
 
                             <input type="text"  name="fullname"  class="form-control" value="<?php echo $names["fullname"] ?>"  placeholder="Enter Full name">
@@ -128,6 +132,9 @@ function test_input($data) {
 
                             <input type="email"  name="email"  class="form-control" value="<?php echo $names["email"] ?>"   placeholder="Enter email">
                         </div>
+                    </div>
+
+                    <div class='col-sm-6 col-xs-12'>
                         <div class="form-group">
 
                             <input type="number"  name="phonenumber"  class="form-control" value="<?php echo $names["phonenumber"] ?>"   placeholder="Enter Phone number">
@@ -146,12 +153,14 @@ function test_input($data) {
                             <input type="number"  name="bankaccount"  class="form-control" value="<?php echo $names["bankaccount"] ?>"  placeholder="Enter account no">
                         </div>
 
-                        <div class="form-group">
-                            <Button type="submit" class="btn btn-primary  btn-block">Register</Button>
+                    </div>
+
+                        <div class="col-sm-10" style="position: absolute;bottom: -100px; left:100px;right:100px">
+                            <Button type="submit" class="btn btn-primary  btn-block" >Register</Button>
                         </div>
 
                     </form>
-                    <div class="col-sm-2 col-md-4 col-lg-3"></div>
+                    <!-- <div class="col-sm-2 col-md-4 col-lg-3"></div> -->
                 </div>
             </div>
 

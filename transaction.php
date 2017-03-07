@@ -75,11 +75,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="container" >
             <div class="row">
 
-                <div class="col-lg-3 col-md-3">
+                <div class="col-lg-1 col-md-1">
 
                 </div>
 
-                <div class="col-sm-12 col-xs-12 col-lg-6 col-md-6 loginstyle" >
+                <div class="col-sm-12 col-xs-12 col-lg-10 col-md-10 loginstyle" >
                     <p class="text-center" style="font-weight: bold; font-size: 18px; padding-bottom: 20px;">Transactions</p>
                     <div class="table-responsive">
                         <table class="table table-bordered">
@@ -163,7 +163,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     </div>
                     
         </div>
-                <div class="col-lg-3 col-md-3">
+                <div class="col-lg-1 col-md-1">
 
                 </div>
                 

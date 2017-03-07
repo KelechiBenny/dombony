@@ -3,7 +3,7 @@
 class DatabaseHandler {
 
     function connectToDB() {
-        return mysqli_connect('localhost', 'franko4don', '', 'dombony');
+        return mysqli_connect('localhost', 'root', '', 'dombony');
     }
 
     function getUserDetails($table, $username) {
